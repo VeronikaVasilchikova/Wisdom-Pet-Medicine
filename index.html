@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Wisdom Pet Medicine. Work with form and list</title>
+
+
+	<link rel="stylesheet" type="text/css" href="CSS/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+	<header>
+		<div class="logo">
+			<h3>Wisdom Pet Medicine</h3>
+		</div>
+	</header>
+
+	<div class="container-wrap">
+
+		<div class="header-wrap">
+			<button class="pl">&#43</button>
+			<h3>Add Appointment</h3>
+		</div>
+
+		<div class="wrap">
+
+			<form>
+				<label for="Pet_Name">Pet Name</label>
+				<input  id="Pet_Name" type="text" name="name" placeholder="Please, input Pet Name" autofocus required>
+
+				<label for="Pet_Owner">Pet Owner</label>
+				<input id="Pet_Owner" type="text" name="name" placeholder="Please, input Owner Name" required>
+
+				<label for="Date">Date</label>
+				<input id="Date" type="date" name="name" placeholder="mm/dd/yyyy" required>
+
+				<label for="Time">Time</label>
+				<input id="Time" type="time" name="name" step ="2" required>
+
+				<label class="apt-notes">Apt.Notes</label>
+				<textarea name="textarea" placeholder="Appointment Notes" required></textarea>
+
+				<button class="add">Add Appointment</button>
+			</form>
+
+		</div>
+
+	</div>
+
+	<div class="search">
+		<input id="search" type="search" name="name" placeholder="search">
+		<i class="fas fa-search"></i>
+		<select id="sort" name="Sort by:">
+			<option value="petName">Pet Name</option>
+			<option value="petOwner">Pet Owner</option>
+			<option value="date">Date</option>
+			<option value="time" selected>Time</option>
+		</select>
+	</div>
+
+	<div class="information"></div>
+
+</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
